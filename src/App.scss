@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Poppins;
+	box-sizing: border-box;
+	transition: all ease 0.2s;
+}
+
+html,
+body {
+	background-color: #111;
+}
+
+button {
+	cursor: pointer;
+}
+.app {
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	color: #fff;
+	max-width: 500px;
+	margin: 20px auto;
+}
+.todo-list {
+	margin-top: 16px;
+	height: 48px;
+	width: 384px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: #ffffff;
+	background-color: #333;
+	border: 1px solid #555;
+	padding: 10px;
+	border-radius: 8px;
+}
+li {
+	list-style: none;
+	overflow-wrap: anywhere;
+	height: auto;
+	width: 176px;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.create-button {
+	padding: 10px;
+	border-radius: 8px;
+	background-color: #2a75e7;
+	color: #fff;
+	font-size: 20px;
+	font-family: Poppins;
+	display: flex;
+	margin-left: 20px;
+	justify-content: center;
+	align-items: center;
+	&:hover {
+		filter: brightness(1.1);
+		scale: 1.02;
+	}
+}
+
+.create-input {
+	padding: 15px 20px;
+	font-size: 16px;
+	line-height: 20px;
+	border-radius: 8px;
+	outline: 0;
+	border: 0;
+}
+
+.action-button {
+	background: #fff;
+	margin: 0 5px;
+	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0;
+	padding: 5px;
+}
+
+.btns {
+	display: flex;
+}
+
+.completed {
+	background-color: #2cb65a;
+	border: 0;
+	text-decoration: line-through;
+}
+
+.edit {
+	background-color: #2a75e7;
+	svg {
+		color: #fff;
+	}
+}
+.delete {
+	background-color: rgb(186, 50, 50);
+}
+.complete {
+	background-color: #2fc970;
+	border: 1px solid #000;
+}
